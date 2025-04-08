@@ -10,7 +10,7 @@ const port = 3000;
 // This sets the view engine to ejs(embedded javascript) which transforms the file into an html.
 app.set('view engine', 'ejs');
 // This finds the "view" directory inside the main folder. 
-app.set('views', path.join(process.cwd(), 'views'));
+app.set('views', path.join(process.cwd(), 'views/pages'));
 
 // This request a certain path to callback a designated function.
 app.get('/', (req, res) => {

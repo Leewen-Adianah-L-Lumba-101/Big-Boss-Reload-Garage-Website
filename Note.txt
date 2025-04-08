@@ -1,0 +1,45 @@
+## TO CREATE A SERVER.
+
+1. Go to console and find the js folder.
+
+2. Write "npm init -y".
+
+3. Write "npm install express".
+
+
+## TO CHECK if the server is working 
+write "node ___.js" in the console.
+
+
+## TO CLOSE THE SERVER
+Ctrl + C
+
+
+## TO CHANGE THE HTML FILE TO A EJS FOR A MORE DYNAMIC WEBSITE.
+
+1. At the start of your server.js, create a new requirement for the path module.
+Example: "const path = require('path');"
+
+2. Set the app's view engine to ejs.
+Example: "app.set('view engine', 'ejs');"
+
+3. Find the views directory with app.set;
+Example: "app.set('views', path.join(process.cwd(), 'views'));"
+
+4. Render the html file with app.get;
+Example: 
+"app.get("/", (req, res) => { res.render("index"); })"
+
+5. Lastly change the html file to ejs.
+
+
+## TO MAKE USE OF NODEMON WHICH ALLOWS FOR LIVE SERVER CHANGES.
+
+1. Write "npm install nodemon"
+
+2. Go to package.json and write a new script; "dev : server.js" 
+
+
+## OTHER NOTES
+
+I will be using different js files to be organised.

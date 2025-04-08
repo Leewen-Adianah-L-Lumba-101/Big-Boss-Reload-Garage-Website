@@ -1,0 +1,25 @@
+<!--
+
+Task Title
+
+Explanation of task.
+
+-->
+
+<!--
+The use of '.ejs' file
+
+ejs files or embedded javascript files allows for the use of dynamic content by embedding JavaScript within HTML.
+-->
+
+<%- include('./partials/head.ejs') %>
+    <body>
+        <%- include('./partials/navigation.ejs'); %>
+        <main>
+            <!-- main is used to write unique content for the page -->
+        </main>
+
+        <!-- This is for static javascript files. -->
+        <script type="text/javascript" src=".\dist\js\main.js"></script>
+    </body>
+</html>

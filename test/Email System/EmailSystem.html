@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form id="contacts-form action="cyromag06@gmail.com">
+            <ul class = "rounded">
+                <li style = "color: #FFFFFF">Full Name:<input type="text" placeholder = "Insert Full Name Here" name = "signature" id = 'signature' /></li>
+                <li style = "color: #FFFFFF">Subject:<input type = "text" placeholder = "Write your subject here" name = "subject" id = 'subject' /></li>
+                <li style = "color: #FFFFFF">Message:<textarea placeholder = "Message" name = "message" id = 'message' style="white-space: pre-wrap;"></textarea></li>
+        
+                <a href="javasctipt:void(0)" onclick="javascript:sendEmail()" class="button">Submit</a>
+            </ul>
+        </form>
+
+        <script>
+            function sendEmail(){
+                var sig = document.getElementById('signature').value;
+                var sub = document.getElementById('subject').value;
+                var msgContent= document.getElementById('message').value;
+                var encodedMSGContent = encodeURIComponent(msgContent + "\n\nBy: " + sig)
+
+                //concatenate to string to build URL
+                var url = "mailto:cyromag06@gmail.com" + "?subject=" + sub + "&body=" + encodedMSGContent;
+                window.location.href = url; //(might want to use window.location or something else here)
+                }
+        </script>
+    </body>

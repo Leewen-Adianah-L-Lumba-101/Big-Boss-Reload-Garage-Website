@@ -23,5 +23,3 @@ app.listen(port, () => {
     // This creates a log inside the console to make it easier to run.
     console.log(`Server running at http://localHost:${port}`);
 })
-
-// Credits to John Layda (a friend of mine) for teaching me these things.

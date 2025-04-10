@@ -1,0 +1,23 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/functions";
+@import "../abstracts/placeholder";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    grid-template-areas: "nav"
+    "intro"
+    "about"
+    "googlemaps"
+    "services"
+    "testimonials"
+    "footer"
+    "trademark";
+    grid-template-rows: repeat(8,auto);
+    background-color: $primary-red;
+}

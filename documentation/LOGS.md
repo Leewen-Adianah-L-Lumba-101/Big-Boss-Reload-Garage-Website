@@ -1,5 +1,0 @@
-REMEMBER TO UPDATE THIS EVERYTIME YOU EDIT SOMETHING.
-
-Sample: "Name | Day/Month/Year | Hour/Minutes [pm/am] | Update text (What you edited)"
-
-Leewen | 08/04/2025 | 9:30 pm | INITIAL!

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Testimonial Section</title>
+</head>
+<body>
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial-container">
+        <!-- Existing Reviews -->
+        <div class="testimonial-card">
+          <img src="profile1.jpg" alt="John Doe's profile picture" class="profile-pic">
+          <div class="testimonial-content">
+            <p>"This is the best service I've ever used! Highly recommended."</p>
+            <h4>- John Doe</h4>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img src="profile2.jpg" alt="Jane Smith's profile picture" class="profile-pic">
+          <div class="testimonial-content">
+            <p>"Great quality and amazing customer support. I'm impressed!"</p>
+            <h4>- Jane Smith</h4>
+            <p>⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <!-- New Reviews Will Be Appended Here -->
+        <div id="submitted-reviews"></div>
+      </div>
+    </div>
+    <!-- Write a Review Button -->
+    <button id="writeReviewButton">Write a Review</button>
+  </section>
+
+  <!-- Pop-Up Manual Submission Form -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3>Submit Your Testimonial</h3>
+      <form id="testimonialForm">
+        <textarea name="testimonial" placeholder="Write your testimonial here..." required></textarea>
+        <input type="text" name="name" placeholder="Your full name" required>
+        <label for="rating">Rate Us:</label>
+        <select name="rating" id="rating" required>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

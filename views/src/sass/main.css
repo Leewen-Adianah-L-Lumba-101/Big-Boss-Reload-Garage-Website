@@ -11,6 +11,48 @@ ol {
   padding: 0;
 }
 
+/*
+Design Guide
+------------
+Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
+*/
+.navigation-bar {
+  display: grid;
+  padding: 15px;
+  background-color: #FFFFFF;
+  grid: [row1-start] ". IMG CNTC ." 1fr [row1-end] [row2-start] ". IMG  NAV ." 1fr [row2-end]/0.5fr 1fr 10fr 0.5fr;
+}
+
+.business-logo {
+  grid-area: IMG;
+}
+.business-logo img {
+  width: 90px;
+  height: 90px;
+}
+
+.contact-info {
+  grid-area: CNTC;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.primary-navigation {
+  grid-area: NAV;
+  text-align: center;
+}
+
+.secondary-navigation {
+  display: inline-flex;
+  overflow: hidden;
+  gap: 180px;
+  padding: 8px 0;
+  margin: 0 10px;
+  list-style-type: none;
+}
+
 .footer {
   grid-area: footer;
 }

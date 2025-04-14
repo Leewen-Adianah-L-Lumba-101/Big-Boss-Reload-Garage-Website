@@ -4,8 +4,14 @@ Design Guide
 Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
 */
 
+// Breakpoints
+$breakpoint-mobile: 360px;
+$breakpoint-tablet: 720px;
+$breakpoint-desktop: 1024px;
+
 // Colours
 $primary-blue: #1C449C;
 $primary-red: #D01F27;
 $primary-yellow: #F9C50F;
 $primary-black: #0F0F0F;
+$primary-white: #FFFFFF;

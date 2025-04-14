@@ -1,7 +1,32 @@
+/*
+Design Guide
+------------
+Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
+*/
 html,
 body,
 ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/*
+Design Guide
+------------
+Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  grid-template-areas: "nav" "intro" "about" "googlemaps" "services" "testimonials" "footer" "trademark";
+  grid-template-rows: repeat(8, auto);
+  background-color: #D01F27;
 }/*# sourceMappingURL=main.css.map */

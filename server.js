@@ -12,6 +12,9 @@ app.set('view engine', 'ejs');
 // This finds the "view" directory inside the main folder. 
 app.set('views', path.join(process.cwd(), 'views/pages'));
 
+// This connects the server to all static file (like imgs, videos, and othere) in the views folder.
+app.use(express.static(path.join(__dirname, "views")));
+
 // This request a certain path to callback a designated function.
 app.get('/', (req, res) => {
     // This renders the index ejs file into an html website.

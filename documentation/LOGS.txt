@@ -2,11 +2,8 @@ REMEMBER TO UPDATE THIS EVERYTIME YOU EDIT SOMETHING.
 
 Sample: "Name | Day/Month/Year | Hour/Minutes [pm/am] | Update text (What you edited)"
 
-<<<<<<< HEAD:documentation/LOGS.md
-Leewen | 08/04/2025 | 9:30 pm | INITIAL!
-=======
 ------------------------------------------------
 
 Leewen | 08/04/2025 | 9:30 pm | Initial 
 Soe Zay Ya | 09/04/2025 | 10:12 am | Testimonial
->>>>>>> cbf33b27de42c070cd0112e2ed800f433af8a3c8:documentation/LOGS.txt
+Anzin R. Maglente | 14/04/2025 | 3:15pm | Updated server

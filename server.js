@@ -21,6 +21,10 @@ app.get('/', (req, res) => {
     res.render('index');
 })
 
+app.get('/contact', (req, res) => {
+    res.render('contact')
+})
+
 // This listens for when the server/port is active.
 app.listen(port, () => {
     // This creates a log inside the console to make it easier to run.

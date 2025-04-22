@@ -3,13 +3,7 @@
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
 
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
+.indexpage {
     grid-template-areas: "nav"
     "intro"
     "about"

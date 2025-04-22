@@ -2,6 +2,7 @@
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
+@import "../base/typography";
 
 .navigation-bar {
     display: grid;
@@ -45,4 +46,14 @@
     margin: 0 10px;
     
     list-style-type: none;
+    font-family: $SourceCodeFont;
+    color: black;
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
 }

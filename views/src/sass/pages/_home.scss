@@ -3,15 +3,40 @@
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
 
+body {
+    background-color: $primary-red;
+}
+
 .indexpage {
-    grid-template-areas: "nav"
+    grid-template-areas:
     "intro"
     "about"
     "googlemaps"
     "services"
-    "testimonials"
-    "footer"
-    "trademark";
-    grid-template-rows: repeat(8,auto);
-    background-color: $primary-red;
+    "testimonials";
+    grid-template-rows: repeat(5,auto);
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.about {
+    grid-area: about;
+
+}
+
+.googlemaps {
+    grid-area: googlemaps;
+
+}
+
+.services {
+    grid-area: services;
+
+}
+
+.testimonials {
+    grid-area: testimonials;
+
 }

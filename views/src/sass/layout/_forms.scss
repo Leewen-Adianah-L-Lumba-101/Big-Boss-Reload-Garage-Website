@@ -1,0 +1,52 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/functions";
+@import "../abstracts/placeholder";
+
+.auth-container-sample-1 {
+  display: block;
+  margin-top: 25px;
+  margin-left: 50px;
+
+  .input-name, .input-email, .input-message {
+    margin-top: 20px;
+  }
+}
+
+.auth-container-sample-2 {
+  display: none;
+  position: relative;
+  margin: 75px 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  position: absolute;
+  left: 42%;
+  top: -45px;
+  z-index: 1;
+
+  width: 20%;
+  height: 60px;
+
+  background-color: antiquewhite;
+
+  text-align: center;
+}
+
+.contact-form-inside {
+  position: absolute;
+  top: -25px;
+  left: 6.75%;
+  z-index: 0s;
+
+  width: 80%;
+  padding: 40px;
+
+  background-color: beige;
+
+  .input-email, .input-message {
+    margin-top: 20px;
+  }
+}

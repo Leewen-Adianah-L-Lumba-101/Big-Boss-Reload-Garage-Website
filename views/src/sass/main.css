@@ -61,8 +61,56 @@ Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
   text-decoration: none;
 }
 
-.footer {
-  grid-area: footer;
+/*
+Design Guide
+------------
+Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
+*/
+footer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.footer-navigation {
+  display: flex;
+  overflow: hidden;
+  padding: 30px 6%;
+  color: #FFFFFF;
+}
+.footer-navigation .about-list, .footer-navigation .service-list, .footer-navigation .service-list-2, .footer-navigation .contact-list {
+  display: table-cells;
+  width: 25%;
+  padding: 0 3%;
+}
+.footer-navigation .about-list li, .footer-navigation .service-list li, .footer-navigation .service-list-2 li, .footer-navigation .contact-list li {
+  list-style: none;
+  margin-top: 10px;
+}
+.footer-navigation .about-list a, .footer-navigation .service-list a, .footer-navigation .service-list-2 a, .footer-navigation .contact-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-navigation .service-list-2 {
+  margin-top: 63px;
+}
+
+.footer-trademark {
+  padding: 10px 6%;
+  margin: auto;
+  background-color: #1C449C;
+  text-align: center;
+}
+.footer-trademark ul {
+  display: inline-flex;
+  float: none;
+  overflow: hidden;
+  gap: 160px;
+}
+.footer-trademark ul a, .footer-trademark ul li {
+  color: #FFFFFF;
+  text-decoration: none;
+  list-style: none;
 }
 
 /*

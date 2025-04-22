@@ -70,6 +70,57 @@ Design Guide
 ------------
 Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
 */
+body {
+  background-color: #D01F27;
+}
+
+h1 {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Overpass", sans-serif;
+  font-size: 22px;
+}
+
+.indexpage {
+  grid-template-areas: "intro" "about" "googlemaps" "services" "testimonials";
+  grid-template-rows: repeat(5, auto);
+}
+
+.intro {
+  grid-area: intro;
+  text-align: center;
+  background-image: url("../../../assets/introbanner.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 250px;
+  color: #FFFFFF;
+}
+
+.about {
+  grid-area: about;
+}
+
+.googlemaps {
+  grid-area: googlemaps;
+}
+
+.services {
+  grid-area: services;
+}
+
+.testimonials {
+  grid-area: testimonials;
+}
+
+/*
+Design Guide
+------------
+Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
+*/
 .auth-container-sample-1 {
   display: block;
   margin-top: 25px;
@@ -109,38 +160,4 @@ Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
 }
 .contact-form-inside .input-email, .contact-form-inside .input-message {
   margin-top: 20px;
-}
-
-/*
-Design Guide
-------------
-Refer to Figma if have DOUBT!!!!!!!!!!!!!!!!!
-*/
-body {
-  background-color: #D01F27;
-}
-
-.indexpage {
-  grid-template-areas: "intro" "about" "googlemaps" "services" "testimonials";
-  grid-template-rows: repeat(5, auto);
-}
-
-.intro {
-  grid-area: intro;
-}
-
-.about {
-  grid-area: about;
-}
-
-.googlemaps {
-  grid-area: googlemaps;
-}
-
-.services {
-  grid-area: services;
-}
-
-.testimonials {
-  grid-area: testimonials;
 }/*# sourceMappingURL=main.css.map */

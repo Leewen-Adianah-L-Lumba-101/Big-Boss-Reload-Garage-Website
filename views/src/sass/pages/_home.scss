@@ -2,10 +2,22 @@
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
+@import "../base/typography";
 
 body {
     background-color: $primary-red;
 }
+
+h1 {
+    font-family: $PontanoSansFont;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: $OverpassFont;
+    font-size: 22px;
+}
+
 
 .indexpage {
     grid-template-areas:
@@ -19,6 +31,14 @@ body {
 
 .intro {
     grid-area: intro;
+    text-align: center;
+    background-image: url('../../../assets/introbanner.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 250px;
+    color: $primary-white;
+
 }
 
 .about {

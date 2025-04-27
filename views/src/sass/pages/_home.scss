@@ -19,6 +19,7 @@ h3 {
 }
 
 .indexpage {
+    display: grid;
     grid-template-areas:
     "intro"
     "about"
@@ -37,34 +38,98 @@ h3 {
 }
 
 .about {
+    display: grid;
     grid-area: about;
     grid-template-columns: repeat(2,1fr);
 
     .about1 {
         grid-column: 1/2;
+
+        // This is another reference
+        background-color: darkgray;
     }
 
     .about2 {
+        padding: 80px 0;
+        width: 70%;
         grid-column: 2/3;
-        margin: 20px;
-    }
-}
+        margin: 20px 80px;
+        color: $primary-white;
 
-.button {
-    background-color: $primary-blue;
-    padding: 20px;
-    border-radius: 0;
+        a {
+            display: flex;
+            justify-content: space-between;
+            color: $primary-white;
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: $primary-blue;
+            padding: 20px;
+            border-radius: 0;
+        }
+    }
 }
 
 
 
 .googlemaps {
     grid-area: googlemaps;
+    padding: 180px 0px;
+    text-align: center;
+    color: $primary-white;
+    background-color: gray; 
+    
+    p {
+        margin-bottom: 100px;
+    }
+
+    a {
+        color: $primary-white;
+        text-decoration: none;
+    }
+
+    .button {
+        background-color: $primary-yellow;
+        padding: 20px 55px;
+        border-radius: 0;
+    }
 }
 
 .services {
+    padding: 80px 50px;
+
+    text-align: center;
+
+    background-color: $primary-blue;
+    color: $primary-white;
+
     grid-area: services;
 
+    .services-grid {
+        display: grid;
+
+        margin-bottom: 50px;
+
+        grid: [row1-start] "Itm1 Itm2 Itm3" 1fr [row1-end]
+              [row2-start] "Itm4 Itm5 Itm6" 1fr [row2-end]
+              / auto auto auto; 
+    
+        div {
+            padding: 50px;
+        }
+    }
+
+    a {
+        color: $primary-white;
+        text-decoration: none;
+    }
+
+    .button {
+        background-color: $primary-red;
+        padding: 20px 150px;
+        border-radius: 0;
+    }
 }
 
 .testimonials {

@@ -12,7 +12,7 @@ footer {
 .footer-navigation {
     display: flex;
     overflow: hidden;
-    padding: 30px 6%;
+    padding: 30px 6% 50px;
 
     color: $primary-white;
     
@@ -34,17 +34,18 @@ footer {
     }
 
     .service-list-2 {
-        margin-top: 63px;
+        margin-top: 60px;
     }
 }
 
 .footer-trademark {
-    padding: 10px 6%;
+    padding: 10px 10%;
     margin: auto;
     background-color: $primary-blue;
     text-align: center;
     ul {
-        display: inline-flex;
+        display: flex;
+        justify-content: space-between;
         float: none;
         overflow: hidden;
 

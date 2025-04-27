@@ -19,7 +19,9 @@ h3 {
 }
 
 .indexpage {
+    /* I don't think we need this */
     display: grid;
+    
     grid-template-areas:
     "intro"
     "about"

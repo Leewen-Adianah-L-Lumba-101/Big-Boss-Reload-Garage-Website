@@ -76,9 +76,7 @@ h3 {
         }
 
         .button {
-            // display: flex;
-            // flex-flow: row;
-            align-items: baseline;
+            align-items: center;
             background-color: $primary-blue;
             padding: 20px;
             border-radius: 0;
@@ -129,8 +127,8 @@ h3 {
 
         grid: [row1-start] "Itm1 Itm2 Itm3" 1fr [row1-end]
               [row2-start] "Itm4 Itm5 Itm6" 1fr [row2-end]
-              / auto auto auto; 
-    
+              / 1fr 1fr 1fr; 
+            
         div {
             padding: 50px;
         }

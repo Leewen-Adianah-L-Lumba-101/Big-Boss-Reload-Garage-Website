@@ -12,9 +12,10 @@ footer {
 .footer-navigation {
     display: flex;
     overflow: hidden;
-    padding: 30px 6% 50px;
+    padding: 10px 6% 50px;
 
     color: $primary-white;
+    background-color: $primary-red;
     
     .about-list, .service-list, .service-list-2, .contact-list {
         display: table-cells;
@@ -49,7 +50,7 @@ footer {
         float: none;
         overflow: hidden;
 
-        gap: 160px;
+        gap: 150px;
 
         a, li {
             color: $primary-white;

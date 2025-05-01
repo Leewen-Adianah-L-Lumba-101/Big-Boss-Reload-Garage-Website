@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head.ejs') %>
-    <body>
+    <body style="background-color: #0F0F0F;">
         <%- include('../partials/navigation.ejs'); %>
         <main>
-            
-            <div class="auth-container-sample-1">
-                <h1>Get In Touch</h1>
-                <p>Subtext here!</p>
-                
-                <form
-                id="contacts-form action="@SPODISODIPod@gmail.com"
-                method="POST"
-                >
-                    <div class="input-name">
-                        <label for="name">Full name:</label>
-                        <br><br>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-email">
-                        <label for="email">Email:</label>
-                        <br><br>
-                        <input type="email" id="name" name="name" required>
-                    </div>
-                    <div class="input-message">
-                        <label for="emailmessage">Email Message:</label>
-                        <br><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-                    </div>
-                    <br>
-                    <div class="submit-button">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
 
-            <div class="auth-container-sample-2">
-                <div class="form-title">
-                    <h1>Contact Form</h1>
-                    <p>Subtitle</p>
+            <div class="contact-grid">
+
+                <div class="contact-form">
+                    <h1>Get In Touch!</h1>
+
+                    <form id="contacts-form action="@SPODISODIPod@gmail.com"
+                    method="POST">
+                        <div class="input-name">
+                            <label for="name">Full name:</label>
+                            <br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-email">
+                            <label for="email">Email:</label>
+                            <br>
+                            <input type="email" id="name" name="name" required>
+                        </div>
+                        <div class="input-message">
+                            <label for="emailmessage">Email Message:</label>
+                            <br>
+                            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                        </div>
+                        <br>
+                        <div class="submit-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
 
-                <form
-                id="contacts-form action="@SPODISODIPod@gmail.com"
-                method="POST"
-                class="contact-form-inside"
-                >
-                    <div class="input-name">
-                        <label for="name">Full name:</label>
-                        <br><br>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-email">
-                        <label for="email">Email:</label>
-                        <br><br>
-                        <input type="email" id="name" name="name" required>
-                    </div>
-                    <div class="input-message">
-                        <label for="emailmessage">Email Message:</label>
-                        <br><br>
-                        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-                    </div>
-                    <br>
-                    <div class="submit-button">
-                        <button type="submit">Submit</button>
-                    </div>
+                <div class="whatsapp-container">
+                    <div class="QR-code"></div>
+                    <p class="bottom-text">WhatsApp QR Code</p>
+                </div>
 
-                </form>
+                <div class="contact-details">
+                    <h2>Other ways to contact us:</h2>
+                    <ul>
+                        <li>Phone No: +3029-39 239-2392-933</li>
+                        <li>Email: @SPODISODIPod@gmail.com</li>
+                        <li>WhatsApp: +34-9-4 943093493</li>
+                    </ul>
+                </div>
             </div>
         </main>
         <%- include('../partials/footer.ejs'); %>

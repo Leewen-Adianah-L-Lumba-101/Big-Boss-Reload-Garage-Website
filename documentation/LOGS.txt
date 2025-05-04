@@ -14,3 +14,4 @@ Anzin      | 22/04/2025 | 9:18 pm  | Initial Footer
 Anzin      | 27/04/2025 | 4:42 pm  | Index page layout
 Anzin      | 28/04/2025 | 1:37 am  | Added instructions in the README.md file
 Anzin      | 01/05/2025 | 2:34 am  | Styled Contact Page
+Soe Zay Ya | 04/05/2025 | 4:17 am  | Updated "sort by" function and local storage to save the manually input reviews

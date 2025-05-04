@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic HTML metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Testimonial Section</title>
+</head>
+<body>
+  <!-- Main testimonials section container -->
+  <section class="testimonials">
+    <!-- Section heading -->
+    <h2>What Our Customers Say</h2>
+    
+    <!-- Sorting controls container -->
+    <div class="sort-controls">
+      <!-- Dropdown to select sorting method -->
+      <select id="sortBy">
+        <!-- Sorting options with values that JavaScript will use -->
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+        <option value="rating-high">Rating: High to Low</option>
+        <option value="rating-low">Rating: Low to High</option>
+      </select>
+    </div>
+    
+    <!-- Container for the horizontal testimonial slider -->
+    <div class="testimonial-slider">
+      <!-- Inner container where testimonial cards will be dynamically inserted -->
+      <div class="testimonial-container" id="submitted-reviews">
+        <!-- JavaScript will add testimonial cards here -->
+        <!-- They will display horizontally and scroll if needed -->
+      </div>
+    </div>
+    
+    <!-- Button to open the review submission form -->
+    <button id="writeReviewButton">Write a Review</button>
+  </section>
+
+  <!-- Modal popup form (hidden by default) -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content">
+      <!-- Close button (X) for the modal -->
+      <span class="close-button">&times;</span>
+      <h3>Submit Your Testimonial</h3>
+      <!-- Review submission form -->
+      <form id="testimonialForm">
+        <!-- Textarea for testimonial text -->
+        <textarea name="testimonial" placeholder="Write your testimonial here..." required></textarea>
+        <!-- Input field for user's name -->
+        <input type="text" name="name" placeholder="Your full name" required>
+        <!-- Rating dropdown -->
+        <label for="rating">Rate Us:</label>
+        <select name="rating" id="rating" required>
+          <option value="1">⭐</option>
+          <option value="2">⭐⭐</option>
+          <option value="3">⭐⭐⭐</option>
+          <option value="4">⭐⭐⭐⭐</option>
+          <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

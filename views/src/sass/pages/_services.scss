@@ -4,6 +4,14 @@
 @import "../abstracts/placeholder";
 @import "../base/typography";
 
+.services-header-notification {
+    height: 40px;
+    align-content: center;
+
+    text-align: center;
+
+    color: $primary-white;
+}
 
 .hero-image {
     text-align: center;

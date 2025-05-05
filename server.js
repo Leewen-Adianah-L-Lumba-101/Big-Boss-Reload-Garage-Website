@@ -29,6 +29,14 @@ app.get('/services', (req, res) => {
     res.render('services')
 })
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/location', (req, res) => {
+    res.render('location')
+})
+
 // This listens for when the server/port is active.
 app.listen(port, () => {
     // This creates a log inside the console to make it easier to run.

@@ -42,7 +42,7 @@ h3 {
 .about {
     display: grid;
     grid-area: about;
-    max-height: 600;
+    max-height: 600px;
     grid-template-columns: repeat(2,1fr);
 
     // Picture

@@ -33,9 +33,12 @@ h3 {
 
 .intro {
     grid-area: intro;
+    width: 100%;
+    height: 603px;
+    align-content: center;
+
     text-align: center;
     @include backgroundimage("../../../assets/introbanner.png");
-    padding: 250px;
     color: $primary-white;
 }
 
@@ -48,8 +51,7 @@ h3 {
     // Picture
     .about1 {
         grid-column: 1/2;
-        // This is another reference
-        background-color: darkgray;
+        @include backgroundimage("../../../assets/aboutimage.png");
     }
 
     .about2 {
@@ -89,13 +91,15 @@ h3 {
 
 .googlemaps {
     grid-area: googlemaps;
-    padding: 180px 0px;
+    width: 100%;
+    height: 690px;
+    align-content: center;
     text-align: center;
     color: $primary-white;
-    background-color: gray; 
+    @include backgroundimage("../../../assets/locationimage.png");
     
     p {
-        margin-bottom: 100px;
+        margin-bottom: 120px;
     }
 
     a {

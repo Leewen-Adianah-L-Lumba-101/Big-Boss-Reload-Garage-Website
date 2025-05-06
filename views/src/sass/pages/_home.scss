@@ -19,9 +19,7 @@ h3 {
 }
 
 .indexpage {
-    /* I don't think we need this */
     display: grid;
-    
     grid-template-areas:
     "intro"
     "about"
@@ -153,5 +151,14 @@ h3 {
 
 .testimonials {
     grid-area: testimonials;
+    align-items: center;
+    height: 652px;
+    background-color: $primary-black;
+    color: $primary-white;
+
+    h1 {
+        font-family: $PontanoSansFont;
+        text-align: center;
+    }
 
 }

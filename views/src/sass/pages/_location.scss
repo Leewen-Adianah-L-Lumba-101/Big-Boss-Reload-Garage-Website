@@ -68,6 +68,30 @@
     height: 1040.85px;
 
     @include backgroundimage("../../../assets/google-maps-location.png");
-    text-align: center;
     align-content: center;
+    text-align: center;
+}
+
+.google-map-description {
+    width: 500px;
+    height: 120px;
+    padding: 40px 20px;
+    margin: auto;
+
+    background-color: $primary-red;
+    color: $primary-white;
+
+    h1 {
+        margin-top: 0;
+    }
+    
+    .button {
+        background-color: $primary-white;
+        color: $primary-black;
+        border: none;
+        font-size: 1.1rem;
+        padding: 20px 150px;
+        border-radius: 0;
+        font-family: $OverpassFont;
+    }
 }

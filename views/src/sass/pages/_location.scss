@@ -10,8 +10,7 @@
     height: 655px;
 
     text-align: center;
-    // Again a placeholder for the image.
-    background-color: gray;
+    @include backgroundimage("../../../assets/location-banner.png");
 }
 
 .location-hero-timings {
@@ -24,13 +23,19 @@
           [row2-start] "DA1 TI1" 1fr [row2-end]
           [row3-start] "DA2 TI2" 1fr [row3-end]
           /  1fr 1fr; 
-    width: 500px;
+    width: 600px;
     height: 200px;
 
-    padding: 10px 30px;
+    padding: 10px 30px 52px;
 
     color: $primary-black;
     background-color: $primary-yellow;
+    font-family: $SourceCodeFont;
+    font-size: 24px;
+
+    h1 {
+        font-size: 40px;
+    }
 }
 
 .timing-title {

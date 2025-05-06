@@ -17,3 +17,4 @@ Anzin      | 01/05/2025 | 2:34 am  | Styled Contact Page
 Soe Zay Ya | 04/05/2025 | 4:17 am  | Updated "sort by" function and local storage to save manual input reviews
 Anzin      | 05/05/2025 | 3:41 pm  | Initial about and location Page
 Leewen     | 06/05/2025 | 1:23 pm  | Updated styling and images for Index Page
+Anzin      | 06/05/2025 | 7:15 pm  | Fixes and added images/svgs

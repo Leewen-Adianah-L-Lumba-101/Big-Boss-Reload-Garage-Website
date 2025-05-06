@@ -6,6 +6,7 @@
 
 .services-header-notification {
     height: 40px;
+    padding: 10px 0px;
     align-content: center;
 
     text-align: center;
@@ -17,7 +18,7 @@
     text-align: center;
     padding: 250px;
     color: $primary-white;
-    background-color: gray;
+    @include backgroundimage("../../../assets/services-and-prices-banner.png");
 }
 
 .service-grid-sample {

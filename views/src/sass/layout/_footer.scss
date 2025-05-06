@@ -12,7 +12,7 @@ footer {
 .footer-navigation {
     display: flex;
     overflow: hidden;
-    padding: 10px 6% 50px;
+    padding: 50px 6% 50px;
 
     color: $primary-white;
     background-color: $primary-red;
@@ -22,10 +22,11 @@ footer {
         width: 25%;
         padding: 0 3%;
 
+        ul {font-family: $SourceCodeFont;}
+
         li {
             list-style: none;
-
-            margin-top: 10px;
+            margin-top: 20px;
         }
         
         a {
@@ -40,15 +41,18 @@ footer {
 }
 
 .footer-trademark {
-    padding: 10px 12%;
+    padding: 20px 12%;
     margin: auto;
     background-color: $primary-blue;
     text-align: center;
+
     ul {
+        font-family: $PontanoSansFont;
         display: flex;
         justify-content: space-between;
         float: none;
         overflow: hidden;
+
 
         a, li {
             color: $primary-white;

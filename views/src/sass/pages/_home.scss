@@ -18,6 +18,11 @@ h3 {
     font-size: 22px;
 }
 
+p {
+    font-family: $OverpassFont;
+    padding-bottom: 20px;
+}
+
 .indexpage {
     display: grid;
     grid-template-areas:
@@ -27,6 +32,13 @@ h3 {
     "services"
     "testimonials";
     grid-template-rows: repeat(5,auto);
+}
+
+.button {
+    font-family: $OverpassFont;
+    padding: 20px 55px;
+    border-radius: 0;
+    font-size: 20px;
 }
 
 .intro {
@@ -63,11 +75,6 @@ h3 {
             font-family: $SourceCodeFont;
         }
 
-        p {
-            font-family: $OverpassFont;
-            padding-bottom: 20px;
-        }
-
         a {
             display: flex;
             justify-content: space-between;
@@ -82,7 +89,6 @@ h3 {
             border-radius: 0;
             font-family: $OverpassFont;
             font-weight: 700;
-            font-size: 20px;
         }
     }
 }
@@ -126,7 +132,10 @@ h3 {
         display: grid;
 
         margin-bottom: 50px;
-
+        
+        font-family: $OverpassFont;
+        padding-bottom: 20px;
+        
         grid: [row1-start] "Itm1 Itm2 Itm3" 1fr [row1-end]
               [row2-start] "Itm4 Itm5 Itm6" 1fr [row2-end]
               / 1fr 1fr 1fr; 

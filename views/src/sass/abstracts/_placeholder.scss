@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../abstracts/functions";
+@import "../base/typography";
+
+@mixin button() {
+    border-radius: 0;
+
+    font-family: $OverpassFont;
+    font-size: 20px;
+}

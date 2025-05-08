@@ -5,11 +5,10 @@
 
 .location-hero-image {
     position: relative;
-
     width: 100%;
     height: 655px;
-
     text-align: center;
+
     @include backgroundimage("../../../assets/location-banner.png");
 }
 
@@ -19,17 +18,17 @@
     left: 0px;
 
     display: grid;
+    width: 600px;
+    height: 200px;
+    padding: 10px 30px 52px;
     grid: [row1-start] "TTL TTL" 1fr [row1-end]
           [row2-start] "DA1 TI1" 1fr [row2-end]
           [row3-start] "DA2 TI2" 1fr [row3-end]
           /  1fr 1fr; 
-    width: 600px;
-    height: 200px;
-
-    padding: 10px 30px 52px;
 
     color: $primary-black;
     background-color: $primary-yellow;
+
     font-family: $SourceCodeFont;
     font-size: 24px;
 
@@ -66,10 +65,10 @@
 .google-map {
     width: 100%;
     height: 1040.85px;
+    text-align: center;
+    align-content: center;
 
     @include backgroundimage("../../../assets/google-maps-location.png");
-    align-content: center;
-    text-align: center;
 }
 
 .google-map-description {
@@ -86,12 +85,14 @@
     }
     
     .button {
+        padding: 20px 150px;
+        border: none;
+        border-radius: 0;
+        
         background-color: $primary-white;
         color: $primary-black;
-        border: none;
-        font-size: 1.1rem;
-        padding: 20px 150px;
-        border-radius: 0;
+
         font-family: $OverpassFont;
+        font-size: 1.1rem;
     }
 }

@@ -19,3 +19,4 @@ Anzin      | 05/05/2025 | 3:41 pm  | Initial about and location Page
 Leewen     | 06/05/2025 | 1:23 pm  | Updated styling and images for Index Page
 Anzin      | 06/05/2025 | 7:15 pm  | Fixes and added images/svgs
 Anzin      | 08/05/2025 | 6:00 pm  | Responsive home page initial
+Anzin      | 08/05/2025 | 8:51 pm  | Update the sass format

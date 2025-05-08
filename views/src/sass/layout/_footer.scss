@@ -11,18 +11,19 @@ footer {
 
 .footer-navigation {
     display: flex;
-    overflow: hidden;
     padding: 50px 6% 50px;
-
     color: $primary-white;
     background-color: $primary-red;
+    overflow: hidden;
     
     .about-list, .service-list, .service-list-2, .contact-list {
         display: table-cells;
         width: 25%;
         padding: 0 3%;
 
-        ul {font-family: $SourceCodeFont;}
+        ul {
+            font-family: $SourceCodeFont;
+        }
 
         li {
             list-style: none;
@@ -47,8 +48,8 @@ footer {
     text-align: center;
 
     ul {
-        font-family: $PontanoSansFont;
         display: flex;
+        font-family: $PontanoSansFont;
         justify-content: space-between;
         float: none;
         overflow: hidden;

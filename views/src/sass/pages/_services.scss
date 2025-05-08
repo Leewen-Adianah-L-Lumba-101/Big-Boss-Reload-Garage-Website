@@ -7,29 +7,27 @@
 .services-header-notification {
     height: 40px;
     padding: 10px 0px;
-    align-content: center;
-
-    text-align: center;
-
     color: $primary-white;
+    text-align: center;
+    align-content: center;
 }
 
 .hero-image {
-    text-align: center;
     padding: 250px;
     color: $primary-white;
+    text-align: center;
+
     @include backgroundimage("../../../assets/services-and-prices-banner.png");
 }
 
 .service-grid-sample {
     display: grid;
     margin: 25px 0;
-
-    background-color: white;
-
     grid: [row1-start] "IMG IMG" 0.9fr [row1-end]
           [row2-start] "DES FET" 1fr [row2-end]
           / 1fr 1.2fr; 
+
+    background-color: white;
 }
 
 .service-image {
@@ -50,10 +48,11 @@
     grid-area: FET;
     position: relative;
 
-    margin: 20px 50px;
     padding-left: 40px;
-    background-color: lightgray;
+    margin: 20px 50px;
     border-radius: 15px;
+
+    background-color: lightgray;
 
     ul {
         font-size: large;
@@ -66,7 +65,9 @@
         position:absolute;
         bottom: 20px;
         right: 30px;
+
         color: #15781a;
+        
         font-weight: 600;
         font-size: 3vh;
     }

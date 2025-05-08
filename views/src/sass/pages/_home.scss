@@ -8,7 +8,7 @@ body {
     background-color: $primary-red;
 }
 
-.indexpage {
+.index-page {
     display: grid;
     grid-template-areas:
     "intro"
@@ -39,6 +39,34 @@ body {
         padding-bottom: 18px;
     }
 
+    .button-red {
+        padding: 20px 150px;
+        background-color: $primary-red;
+
+        @include button();
+    }
+
+    .button-blue {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+
+        background-color: $primary-blue;
+
+        font-weight: 700;
+
+        align-items: center;
+
+        @include button();
+    }
+
+    .button-yellow {
+        padding: 20px 150px;
+        background-color: $primary-yellow;
+
+        @include button();
+    }
+
     .intro {
         grid-area: intro;
         width: 100%;
@@ -56,12 +84,12 @@ body {
         width: 100%;
     }
 
-    .about1 {
+    .about-photo {
         height: 428px;
         @include backgroundimage("../../../assets/about-image.png");
     }
 
-    .about2 {
+    .about-description {
         height: 390px;
         margin: 48px 80px 0px;
         color: $primary-white;
@@ -72,26 +100,19 @@ body {
             color: $primary-white;
             text-decoration: none;
         }
-
-        .button {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            background-color: $primary-blue;
-            padding: 20px;
-            border-radius: 0;
-            font-family: $OverpassFont;
-            font-weight: 700;
-        }
     }
 
-    .googlemaps {
+    .google-maps {
         grid-area: googlemaps;
         width: 100%;
         height: 690px;
-        align-content: center;
-        text-align: center;
+
         color: $primary-white;
+
+        text-align: center;
+
+        align-content: center;
+
         @include backgroundimage("../../../assets/location-image.png");
         
         p {
@@ -101,12 +122,6 @@ body {
         a {
             color: $primary-white;
             text-decoration: none;
-        }
-    
-        .button {
-            background-color: $primary-yellow;
-            padding: 20px 150px;
-            border-radius: 0;
         }
     }
 
@@ -144,13 +159,6 @@ body {
         a {
             color: $primary-white;
             text-decoration: none;
-        }
-    
-        .button {
-            background-color: $primary-red;
-            padding: 20px 150px;
-            border-radius: 0;
-            font-family: $OverpassFont;
         }
     }
 }
@@ -235,7 +243,7 @@ body {
         }
     }
     
-    .googlemaps {
+    .google-maps {
         grid-area: googlemaps;
         width: 100%;
         height: 690px;

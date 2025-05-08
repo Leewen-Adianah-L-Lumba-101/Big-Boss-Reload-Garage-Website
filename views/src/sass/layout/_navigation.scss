@@ -4,57 +4,132 @@
 @import "../abstracts/placeholder";
 @import "../base/typography";
 
-.navigation-bar {
-    display: grid;
-    padding: 15px;
-    background-color: $primary-white;
-    grid: [row1-start] ". IMG CNTC ." 1fr [row1-end]
-          [row2-start] ". IMG  NAV ." 1fr [row2-end]
-          / 0.5fr 1fr 10fr 0.5fr; 
-}
+@media screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-desktop - 1)) {
+    .navigation-bar {
+        display: grid;
+        padding: 10px 50px;
 
-.business-logo {
-    grid-area: IMG;
+        border: 1px black dashed;
+        background-color: $primary-white;
+        grid: [row1-start] "CNTC CNTC" 1fr [row1-end]
+              [row2-start] "IMG  NAV" 3fr [row2-end]
+              / 1fr 10fr; 
 
-    img {
-        width: 90px;
-        height: 90px;
+        div {
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    .business-logo {
+        grid-area: IMG;
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .contact-info {
+        grid-area: CNTC;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .primary-navigation {
+        display: none;
+    }
+
+    .hamburger-navigation {
+        grid-area: NAV;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+        
+        .button {
+            padding: 20px;
+            background-color: $primary-blue;
+            text-align: center;
+            width: 100px;
+
+            color: $primary-white;
+
+            h3 {
+                margin: 0px;
+            }
+        }
+
+        .hamburger {
+            margin-left: 30px;
+            width: 30px;
+            height: 30px;
+
+            img {
+                width: 30px;
+                height: 25px;
+            }
+        }
     }
 }
 
-.contact-info {
-    grid-area: CNTC;
+@media screen and (min-width: $breakpoint-desktop) {
+    .navigation-bar {
+        display: grid;
+        padding: 15px 80px;
+        background-color: $primary-white;
+        grid: [row1-start] "IMG CNTC" 1fr [row1-end]
+              [row2-start] "IMG  NAV" 1fr [row2-end]
+              / 1fr 10fr; 
+    }
 
-    font-size: 17px;
+    .business-logo {
+        grid-area: IMG;
 
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    }
 
-.primary-navigation {
-    grid-area: NAV;
-    text-align: center;
-}
+    .contact-info {
+        grid-area: CNTC;
 
-.secondary-navigation {
-    display: inline-flex;
-    overflow: hidden;
+        font-size: 17px;
 
-    gap: 175px;
-    padding: 8px 0;
-    margin: 0 10px;
-    
-    list-style-type: none;
-    font-family: $SourceCodeFont;
-    color: black;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
-    a:visited {
-        text-decoration: none;
+    .primary-navigation {
+        grid-area: NAV;
+        text-align: center;
+    }
+
+    .secondary-navigation {
+        display: inline-flex;
+        overflow: hidden;
+
+        gap: 175px;
+        padding: 8px 0;
+        margin: 0 10px;
+        
+        list-style-type: none;
+        font-family: $SourceCodeFont;
         color: black;
+
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
     }
 
-    a:link {
-        text-decoration: none;
+    .hamburger-navigation {
+        display: none;
     }
 }

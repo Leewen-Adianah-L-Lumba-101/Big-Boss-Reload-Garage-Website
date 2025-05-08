@@ -27,7 +27,7 @@
           [row2-start] "DES FET" 1fr [row2-end]
           / 1fr 1.2fr; 
 
-    background-color: white;
+    background-color: $primary-white;
 }
 
 .service-image {
@@ -60,15 +60,15 @@
         columns: 12rem;  
         column-gap: 4rem;  
     }
+}
 
-    .service-price {
-        position:absolute;
-        bottom: 20px;
-        right: 30px;
+.service-price {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
 
-        color: #15781a;
-        
-        font-weight: 600;
-        font-size: 3vh;
-    }
+    color: #15781a;
+    
+    font-weight: 600;
+    font-size: 3vh;
 }

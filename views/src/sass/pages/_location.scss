@@ -84,16 +84,14 @@
         margin-top: 0;
     }
     
-    .button {
+    .button-white {
         padding: 20px 150px;
         border: none;
-        border-radius: 0;
         text-align: center;
         
         background-color: $primary-white;
         color: $primary-black;
 
-        font-family: $OverpassFont;
-        font-size: 1.1rem;
+        @include button()
     }
 }

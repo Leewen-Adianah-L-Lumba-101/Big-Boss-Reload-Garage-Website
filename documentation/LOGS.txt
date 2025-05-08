@@ -21,3 +21,4 @@ Anzin      | 06/05/2025 | 7:15 pm  | Fixes and added images/svgs
 Daryll     | 06/05/2025 | 9:12 pm  | Made the backend for the location page
 Anzin      | 08/05/2025 | 6:00 pm  | Responsive home page initial
 Anzin      | 08/05/2025 | 8:51 pm  | Update the sass format
+Anzin      | 09/05/2025 | 3:53 pm  | Changed font size and general style of the home page

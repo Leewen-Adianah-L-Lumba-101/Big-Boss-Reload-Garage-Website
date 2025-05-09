@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Our Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="map-container1">
+        <img src="C:\Users\darel\OneDrive\Desktop\BIGBOSS RELOAD GARAGE HTML & CSS FrontEnd\bigbossinpnng.png" alt="Map Background" class="background-image">
+        <div class="overlay">
+            <div class="text-content">
+                <h1>FIND OUR GARAGE ON GOOGLE MAPS</h1>
+                <p>Open from Mondays to Saturdays 8:30am - 8:00pm.<br>Closed on Sundays.</p>
+            </div>
+            <button id="view-location">VIEW LOCATION & TIMINGS</button>
+        </div>
+    </div>
+    
+
+    <script>
+  document.getElementById('view-location').addEventListener('click', function() {
+    console.log('Button clicked. Will navigate to Map Tab.');
+    window.location.href = 'Navigation.html'; // Replace with the correct file or URL
+  });
+</script>
+</body>
+</html>

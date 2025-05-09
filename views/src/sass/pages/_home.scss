@@ -19,10 +19,6 @@ body {
     grid-template-rows: repeat(5,auto);
 }
 
-@media screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-tablet)) {
-
-}
-
 @media screen and (min-width: $breakpoint-tablet) and (max-width: ($breakpoint-desktop)) {
     h1 {
         font-family: $PontanoSansFont;

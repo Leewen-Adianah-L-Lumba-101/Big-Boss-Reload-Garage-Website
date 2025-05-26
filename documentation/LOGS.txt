@@ -24,3 +24,4 @@ Anzin      | 08/05/2025 | 8:51 pm  | Update the sass format
 Anzin      | 09/05/2025 | 3:53 pm  | Changed font size and general style of the home page
 Anzin      | 09/05/2025 | 6:03 pm  | Added Daryll's work, and made the home page more responsive.
 Anzin      | 10/05/2025 | 4:15 pm  | Updated the about and services page to have content
+Daryll     | 10/05/2025 | 1:01 pm  | Attempting to do the Web Responsiveness

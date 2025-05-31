@@ -22,5 +22,6 @@ Darell     | 06/05/2025 | 9:12 pm  | Made the backend for the location page
 Anzin      | 08/05/2025 | 6:00 pm  | Responsive home page initial
 Anzin      | 08/05/2025 | 8:51 pm  | Update the sass format
 Anzin      | 09/05/2025 | 3:53 pm  | Changed font size and general style of the home page
-Anzin      | 09/05/2025 | 6:03 pm  | Added Darell's work, and made the home page more responsive.
+Anzin      | 09/05/2025 | 6:03 pm  | Added Darell's work, and made the home page more responsive
 Anzin      | 10/05/2025 | 4:15 pm  | Updated the about and services page to have content
+Leewen     | 31/05/2025 | 1:42pm   | Edited Location and Services page

@@ -72,10 +72,12 @@
 }
 
 .google-map-description {
-    width: 500px;
+    width: auto;
     height: 120px;
     padding: 40px 20px;
-    margin: auto;
+    margin: 10px 450px 50px 450px;
+    text-align: center;
+
 
     background-color: $primary-red;
     color: $primary-white;
@@ -92,6 +94,10 @@
         background-color: $primary-white;
         color: $primary-black;
 
-        @include button()
+        @include button();
+    }
+
+    a { 
+        text-decoration: none; 
     }
 }

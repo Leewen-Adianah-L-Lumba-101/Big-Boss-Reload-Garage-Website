@@ -47,13 +47,17 @@
   text-align: center;
 
   align-self: center;
+
+  .bottom-text {
+    font-size: 1.2rem;
+  }
 }
 
 .QR-code {
   width: 170px;
-  height: 190px;
+  height: 150px;
   
-  @include backgroundimage("../../../assets/contact-whatsapp.png");
+  @include backgroundimage("../../../assets/whatsapp-qr-code.svg");
 }
 
 .contact-details {

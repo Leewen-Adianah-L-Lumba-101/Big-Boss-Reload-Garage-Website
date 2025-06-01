@@ -4,6 +4,7 @@
 @import "../abstracts/placeholder";
 @import "../base/typography";
 
+
 .services-header-notification {
     height: 40px;
     padding: 10px 0px;
@@ -11,6 +12,9 @@
     text-align: center;
     align-content: center;
     font-family: $OverpassFont;
+    a {
+        color: white;
+    }
 }
 
 .hero-image {
@@ -23,7 +27,8 @@
 
 .service-grid-sample {
     display: grid;
-    margin: 25px 0;
+    margin: 25px 50px 25px 50px;
+    // up   left
     grid: [row1-start] "IMG IMG" 0.9fr [row1-end]
           [row2-start] "DES FET" 1fr [row2-end]
           / 1fr 1.2fr; 

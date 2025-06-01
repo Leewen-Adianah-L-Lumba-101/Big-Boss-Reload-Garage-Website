@@ -28,7 +28,6 @@
 .service-grid-sample {
     display: grid;
     margin: 25px 50px 25px 50px;
-    // up   left
     grid: [row1-start] "IMG IMG" 0.9fr [row1-end]
           [row2-start] "DES FET" 1fr [row2-end]
           / 1fr 1.2fr; 

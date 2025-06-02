@@ -26,15 +26,15 @@
 }
 
 .services-area {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 }
+
 .service-grid-sample {
     display: grid;
     margin: 25px 100px 25px 100px;
     grid: [row1-start] "IMG" 0.9fr [row1-end]
-          [row2-start] "DES" 1fr [row2-end]
-          / 1fr 1.2fr; 
+          [row2-start] "DES" 1fr [row2-end]; 
 
     background-color: $primary-white;
 }
@@ -46,39 +46,48 @@
 
 .service-desc {
     grid-area: DES;
-    padding-left: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     h1 {
         margin-bottom: 10px;
     }
 }
 
-.service-features-box {
-    grid-area: FET;
-    position: relative;
-
-    padding-left: 40px;
-    margin: 20px 50px;
-    border-radius: 15px;
-
-    background-color: lightgray;
-    display: none;
-
-    ul {
-        font-size: large;
-        margin: 0 40px;
-        columns: 12rem;  
-        column-gap: 4rem;  
-    }
+#repairs, #oil-change, #paintings, #exhaust-repair, #car-shed {
+    margin: 25px 50px 25px 100px;
 }
 
-.service-price {
-    position: absolute;
-    bottom: 20px;
-    right: 30px;
+#denting, #accessories, #polishing, #seat-clean {
+    margin: 25px 100px 25px 50px;
+}
 
-    color: #15781a;
+// .service-features-box {
+//     grid-area: FET;
+//     position: relative;
+
+//     padding-left: 40px;
+//     margin: 20px 50px;
+//     border-radius: 15px;
+
+//     background-color: lightgray;
+//     display: none;
+
+//     ul {
+//         font-size: large;
+//         margin: 0 40px;
+//         columns: 12rem;  
+//         column-gap: 4rem;  
+//     }
+// }
+
+// .service-price {
+//     position: absolute;
+//     bottom: 20px;
+//     right: 30px;
+
+//     color: #15781a;
     
-    font-weight: 600;
-    font-size: 3vh;
-}
+//     font-weight: 600;
+//     font-size: 3vh;
+// }

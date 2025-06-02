@@ -425,13 +425,15 @@ body {
         .sort-controls {
             width: 200px;
             margin: 0 auto; 
-            text-align: center
+            text-align: center;
+            font-family: $OverpassFont;
+            font-weight: 400;
         }
         
         .sort-controls select {
             width: 100%; 
             padding: 8px; 
-            border-radius: 5px; 
+            border-radius: 0px; 
             border: 1px solid $primary-red; 
 
             background-color: $primary-black; 

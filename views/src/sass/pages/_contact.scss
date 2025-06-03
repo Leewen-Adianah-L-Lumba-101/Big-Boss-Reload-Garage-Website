@@ -19,6 +19,20 @@
         / 1fr 1fr; 
 }
 
+.button-blue {
+      display: flex;
+      padding: 10px;
+      flex-direction: row;
+
+      background-color: $primary-blue;
+
+      font-weight: 700;
+
+      align-items: center;
+
+      @include button();
+}
+
 .contact-form {
   grid-area: FRM;
   

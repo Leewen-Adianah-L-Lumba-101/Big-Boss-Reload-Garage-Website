@@ -19,20 +19,6 @@
         / 1fr 1fr; 
 }
 
-.button-blue {
-      display: flex;
-      padding: 10px;
-      flex-direction: row;
-
-      background-color: $primary-blue;
-
-      font-weight: 700;
-
-      align-items: center;
-
-      @include button();
-}
-
 .contact-form {
   grid-area: FRM;
   
@@ -84,5 +70,17 @@
   
   li {
     margin-left: 30px;
+  }
+}
+
+.submit-button {
+  button {
+      background-color: $primary-blue;
+      border: none;
+      color: white;
+      padding: 10px 30px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
   }
 }

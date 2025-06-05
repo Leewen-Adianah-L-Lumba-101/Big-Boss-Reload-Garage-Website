@@ -24,7 +24,8 @@ Anzin      | 08/05/2025 | 8:51 pm  | Update the sass format
 Anzin      | 09/05/2025 | 3:53 pm  | Changed font size and general style of the home page
 Anzin      | 09/05/2025 | 6:03 pm  | Added Darell's work, and made the home page more responsive
 Anzin      | 10/05/2025 | 4:15 pm  | Updated the about and services page to have content
-Leewen     | 31/05/2025 | 1:42pm   | Edited Location and Services page
-Leewen     | 02/05/2025 | 12:20am  | Changed contact details, about page banner update, changed services layout
-Leewen     | 03/05/2025 | 1:20am   | Edited About Us page
-Leewen     | 05/05/2025 | 6:20pm   | Edited Services page contents and Contact page
+Leewen     | 31/05/2025 | 1:42 pm  | Edited Location and Services page
+Leewen     | 02/06/2025 | 12:20 am | Changed contact details, about page banner update, changed services layout
+Leewen     | 03/06/2025 | 1:20 am  | Edited About Us page
+Leewen     | 05/06/2025 | 6:20 pm  | Edited Services page contents and Contact page
+Anzin      | 05/06/2025 | 9:23 pm  | Final Edit

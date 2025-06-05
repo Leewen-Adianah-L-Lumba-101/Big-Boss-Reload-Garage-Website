@@ -4,7 +4,16 @@
     <body>
         <%- include('../partials/navigation.ejs'); %>
         <main>
-            <div class="location-hero-image">
+            <div class="gallery-container">
+                <div class="gallery-slideshow">
+                    <img src="../assets/Location-Banner-1.jpg" class="active" alt="Slide 1">
+                    <img src="../assets/Location-Banner-2.jpg" alt="Slide 2">
+                    <img src="../assets/Location-Banner-3.jpg" alt="Slide 3">
+                    <img src="../assets/Location-Banner-4.jpg" alt="Slide 4">
+                    <img src="../assets/Location-Banner-5.jpg" alt="Slide 5">
+                    <img src="../assets/Location-Banner-6.jpg" alt="Slide 6">
+                </div>
+
                 <div class="location-timings">
                     <div class="timing-title"> <h1>TIMINGS</h1> </div>
                     <div class="timing-date-1">Mondays - Saturdays</div>
@@ -12,7 +21,6 @@
                     <div class="timing-date-2">Sunday</div>
                     <div class="timing-hour-2">CLOSED</div>
                 </div>
-            </div>
             
             <div class="google-map">
                 <iframe 
@@ -34,4 +42,15 @@
         </main>
         <%- include('../partials/footer.ejs'); %>
     </body>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll(".gallery-slideshow img");
+
+        setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+        }, 3000);
+    </script>
 </html>

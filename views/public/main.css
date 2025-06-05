@@ -1,0 +1,1037 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1023px) {
+  .navigation-bar {
+    display: grid;
+    padding: 10px 50px;
+    border: 1px black dashed;
+    background-color: #FFFFFF;
+    grid: [row1-start] "CNTC CNTC" 1fr [row1-end] [row2-start] "IMG  NAV" 3fr [row2-end]/1fr 10fr;
+  }
+  .navigation-bar div {
+    width: 100%;
+    align-self: center;
+  }
+  .business-logo {
+    grid-area: IMG;
+  }
+  .business-logo img {
+    width: 90px;
+    height: 90px;
+  }
+  .contact-info {
+    grid-area: CNTC;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .primary-navigation {
+    display: none;
+  }
+  .hamburger-navigation {
+    grid-area: NAV;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+  }
+  .hamburger-navigation .button {
+    padding: 20px;
+    background-color: #1C449C;
+    text-align: center;
+    width: 120px;
+    color: #FFFFFF;
+  }
+  .hamburger-navigation .button h3 {
+    margin: 0px;
+  }
+  .hamburger-navigation .hamburger {
+    margin-left: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .hamburger-navigation .hamburger img {
+    width: 30px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navigation-bar {
+    display: grid;
+    padding: 15px 80px;
+    background-color: #FFFFFF;
+    grid: [row1-start] "IMG CNTC" 1fr [row1-end] [row2-start] "IMG  NAV" 1fr [row2-end]/1fr 10fr;
+  }
+  .business-logo {
+    grid-area: IMG;
+  }
+  .business-logo img {
+    width: 90px;
+    height: 90px;
+  }
+  .contact-info {
+    grid-area: CNTC;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    text-align: center;
+  }
+  .primary-navigation {
+    grid-area: NAV;
+    text-align: center;
+  }
+  .secondary-navigation {
+    display: inline-flex;
+    overflow: hidden;
+    gap: 175px;
+    padding: 8px 0;
+    margin: 0 10px;
+    list-style-type: none;
+    font-family: "Source Code Pro", monospace;
+    color: black;
+  }
+  .secondary-navigation a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  .secondary-navigation a:link {
+    text-decoration: none;
+  }
+  .hamburger-navigation {
+    display: none;
+  }
+}
+footer {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.footer-navigation {
+  display: flex;
+  padding: 50px 6% 50px;
+  color: #FFFFFF;
+  background-color: #D01F27;
+  overflow: hidden;
+}
+
+.about-list, .service-list, .service-list-2, .contact-list {
+  display: table-cells;
+  width: 25%;
+  padding: 0 3%;
+}
+.about-list ul, .service-list ul, .service-list-2 ul, .contact-list ul {
+  font-family: "Source Code Pro", monospace;
+}
+.about-list li, .service-list li, .service-list-2 li, .contact-list li {
+  list-style: none;
+  margin-top: 20px;
+}
+.about-list a, .service-list a, .service-list-2 a, .contact-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.service-list-2 {
+  margin-top: 60px;
+}
+
+.footer-trademark {
+  padding: 20px 12%;
+  margin: auto;
+  background-color: #1C449C;
+  text-align: center;
+}
+.footer-trademark ul {
+  display: flex;
+  font-family: "Pontano Sans", sans-serif;
+  justify-content: space-between;
+  float: none;
+  overflow: hidden;
+}
+.footer-trademark ul a, .footer-trademark ul li {
+  color: #FFFFFF;
+  text-decoration: none;
+  list-style: none;
+}
+
+.about-hero-image {
+  width: 100%;
+  height: 665.63px;
+  background-color: #D9D9D9;
+  background-color: #0F0F0F;
+  align-content: center;
+  background-image: url("../../../assets/about-banner.png");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.about-hero-content {
+  width: 35%;
+  margin: auto;
+  text-align: center;
+  color: #FFFFFF;
+}
+.about-hero-content h2 {
+  font-style: italic;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+.about-content {
+  padding: 30px 150px;
+  background-color: #0F0F0F;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+.contact-background {
+  background-color: #0F0F0F;
+}
+
+.contact-grid {
+  display: grid;
+  padding: 30px;
+  margin: 50px;
+  background-color: #FFFFFF;
+  grid: [row1-start] "FRM QRC" 2fr [row1-end] [row2-start] "FRM DET" 1fr [row2-end]/1fr 1fr;
+}
+
+.contact-form {
+  grid-area: FRM;
+}
+.contact-form h1 {
+  margin-top: 0;
+}
+
+h2 {
+  font-family: "Source Code Pro", monospace;
+}
+
+label {
+  font-family: "Pontano Sans", sans-serif;
+}
+
+.input-name, .input-email, .input-message {
+  margin: 10px 0;
+}
+
+.input-message textarea {
+  min-height: 100px;
+  max-height: 200px;
+  resize: vertical;
+}
+
+.whatsapp-container, .location-container {
+  grid: QRC;
+  width: 170px;
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  align-self: center;
+}
+.whatsapp-container .bottom-text, .location-container .bottom-text {
+  font-size: 1.2rem;
+}
+
+.QR-code {
+  width: 170px;
+  height: 156px;
+  background-image: url("../../../assets/whatsapp-qr-code.svg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.QR-code2 {
+  width: 170px;
+  height: 150px;
+  background-image: url("../../../assets/location-code.svg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-details {
+  grid-area: DET;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.contact-details h2 {
+  margin-top: 0px;
+}
+.contact-details li {
+  margin-left: 30px;
+  font-family: "Overpass", sans-serif;
+}
+
+.submit-button button {
+  background-color: #1C449C;
+  border: none;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Overpass", sans-serif;
+}
+
+input[type=text], select, input[type=email] {
+  font-family: "Overpass", sans-serif;
+  width: 650px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 650px;
+  height: 150px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  resize: none;
+}
+
+.qr-codes-container {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 0px;
+}
+
+body {
+  background-color: #D01F27;
+}
+
+.index-page {
+  display: grid;
+  grid-template-areas: "intro" "about" "googlemaps" "services" "testimonials";
+  grid-template-rows: repeat(5, auto);
+}
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  h1 {
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+  p {
+    font-family: "Overpass", sans-serif;
+    font-size: 1.2rem;
+    padding-bottom: 18px;
+  }
+  .button-red {
+    padding: 20px 150px;
+    background-color: #D01F27;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .button-blue {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    background-color: #1C449C;
+    font-weight: 700;
+    align-items: center;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .button-yellow {
+    padding: 20px 150px;
+    background-color: #F9C50F;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .intro {
+    grid-area: intro;
+    width: 100%;
+    height: 428px;
+    align-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-image: url("../../../assets/intro-banner.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .intro-description {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .intro-description h3 {
+    margin: auto;
+    width: 65%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-photo {
+    height: 428px;
+    background-image: url("../../../assets/about-image.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .about-description {
+    height: 390px;
+    margin: 48px 80px;
+    color: #FFFFFF;
+  }
+  .about-description a {
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .google-maps {
+    grid-area: googlemaps;
+    width: 100%;
+    height: 690px;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+    background-image: url("../../../assets/location-image.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .google-maps p {
+    margin-bottom: 120px;
+  }
+  .google-maps a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .services {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #1C449C;
+    color: #FFFFFF;
+    grid-area: services;
+  }
+  .services .services-grid {
+    display: grid;
+    margin-bottom: 50px;
+    font-family: "Overpass", sans-serif;
+    padding-bottom: 20px;
+    grid: [row1-start] "Itm1 Itm2 Itm3" 1fr [row1-end] [row2-start] "Itm4 Itm5 Itm6" 1fr [row2-end]/1fr 1fr 1fr;
+  }
+  .services .services-grid div {
+    padding: 50px;
+  }
+  .services .services-grid div img {
+    padding-bottom: 20px;
+  }
+  .services a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 40px;
+  }
+  h3 {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  p {
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+    font-family: "Overpass", sans-serif;
+  }
+  .button-red {
+    padding: 20px 150px;
+    background-color: #D01F27;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .button-blue {
+    padding: 20px;
+    align-items: center;
+    background-color: #1C449C;
+    font-weight: 700;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .button-yellow {
+    padding: 20px 150px;
+    background-color: #F9C50F;
+    border-radius: 0;
+    font-family: "Overpass", sans-serif;
+    font-size: 20px;
+  }
+  .intro {
+    grid-area: intro;
+    width: 100%;
+    height: 603px;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url("../../../assets/intro-banner.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .intro-description {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .intro-description h3 {
+    margin: auto;
+    width: 653.92px;
+  }
+  .about {
+    grid-area: about;
+    display: grid;
+    height: 603px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-photo {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    background-image: url("../../../assets/about-image.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .about-description {
+    width: 75%;
+    padding-bottom: 50px;
+    margin: 50px 80px 0px;
+    color: #FFFFFF;
+    grid-column: 2/3;
+  }
+  .about-description h2 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 15px;
+  }
+  .about-description a {
+    display: flex;
+    color: #FFFFFF;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+  .google-maps {
+    grid-area: googlemaps;
+    width: 100%;
+    height: 690px;
+    color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+    background-image: url("../../../assets/location-image.png");
+    background-color: #D01F27;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .google-maps p {
+    margin-bottom: 120px;
+  }
+  .google-maps a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .services {
+    grid-area: services;
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #1C449C;
+    color: #FFFFFF;
+  }
+  .services h1 {
+    margin-top: 0px;
+  }
+  .services a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  .services-grid {
+    display: grid;
+    margin-bottom: 10px;
+    font-family: "Overpass", sans-serif;
+    grid: [row1-start] "Itm1 Itm2 Itm3" 1fr [row1-end] [row2-start] "Itm4 Itm5 Itm6" 1fr [row2-end]/1fr 1fr 1fr;
+  }
+  .services-grid div {
+    padding: 50px;
+  }
+  .services-grid div img {
+    padding-bottom: 20px;
+  }
+  .testimonials {
+    grid-area: testimonials;
+    height: 652px;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    align-items: center;
+    /* TESTIMONIAL SECTION */
+    /* HORIZONTAL TESTIMONIAL SLIDER */
+    /* Hide scrollbar but keep scrolling functionality */
+    /* Container for testimonial cards */
+    /* Individual testimonial card styling */
+    /* Testimonial content styling */
+    /* SORTING CONTROLS */
+    /* Empty state message when no reviews */
+    /* WRITE REVIEW BUTTON */
+    /* MODAL POPUP STYLES */
+    /* Modal content box */
+    /* Close button (X) styling */
+    /* FORM STYLES */
+    /* Form input fields */
+    /* Textarea specific styles */
+    /* Submit button styles */
+    /* Form label styling */
+  }
+  .testimonials h1 {
+    font-family: "Pontano Sans", sans-serif;
+    text-align: center;
+  }
+  .testimonials h3 {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+  }
+  .testimonials .testimonials2 {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .testimonials .testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 2rem; /* Large heading size */
+  }
+  .testimonials .testimonial-slider {
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+    white-space: nowrap; /* Keep cards in single line */
+    scroll-behavior: smooth; /* Smooth scrolling animation */
+  }
+  .testimonials .testimonial-slider::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+  .testimonials .testimonial-slider {
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .testimonials .testimonial-container {
+    display: inline-flex; /* Horizontal layout */
+    gap: 20px; /* Space between cards */
+  }
+  .testimonials .testimonial-card {
+    display: inline-block; /* Horizontal layout */
+    width: 280px;
+    height: 250px;
+    padding: 20px;
+    flex-shrink: 0; /* Prevent shrinking */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.4);
+    background: #FFFFFF;
+    color: #0F0F0F;
+    white-space: normal; /* Allow text wrapping */
+    vertical-align: top; /* Align cards to top */
+    border: 2px solid #D01F27;
+    border-radius: 10px;
+  }
+  .testimonials .testimonial-content p {
+    height: 100px;
+    margin: 0 0 10px 0;
+    font-style: italic;
+    overflow: hidden; /* Hide overflow text */
+  }
+  .testimonials .testimonial-content h4 {
+    margin: 10px 0;
+    color: #555;
+    font-weight: bold;
+  }
+  .testimonials .sort-controls {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+  }
+  .testimonials .sort-controls select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 0px;
+    border: 1px solid #D01F27;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  .testimonials .no-reviews {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    font-style: italic;
+  }
+  .testimonials #writeReviewButton {
+    padding: 20px 150px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 0;
+    background-color: #1C449C;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: "Overpass", sans-serif;
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s ease;
+  }
+  .testimonials #writeReviewButton:hover {
+    background: rgb(82, 132, 224);
+  }
+  .testimonials .modal {
+    position: fixed;
+    z-index: 1000; /* Ensure it's on top */
+    top: 0;
+    left: 0;
+    display: none; /* Hidden by default */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonials .modal-content {
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    border: 3px solid #D01F27;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.5);
+    text-align: center;
+    background: #FFFFFF;
+    color: #0F0F0F;
+  }
+  .testimonials .close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .testimonials .modal-content h3 {
+    margin-bottom: 20px;
+    color: #D01F27;
+    font-size: 1.8rem;
+  }
+  .testimonials form {
+    display: flex; /* Flex layout */
+    flex-direction: column; /* Vertical stacking */
+    gap: 15px; /* Space between fields */
+  }
+  .testimonials textarea,
+  .testimonials input,
+  .testimonials select {
+    width: calc(100% - 40px); /* Account for padding */
+    padding: 15px;
+    margin: 0 auto;
+    border: 1px solid #D01F27;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: "Pontano Sans", sans-serif;
+  }
+  .testimonials textarea {
+    height: 120px;
+    resize: none; /* Disable resizing */
+  }
+  .testimonials button[type=submit] {
+    padding: 20px 150px;
+    border: none;
+    border-radius: 0;
+    font-size: 1.1rem;
+    font-family: "Overpass", sans-serif;
+    color: #FFFFFF;
+    background-color: #D01F27;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .testimonials button[type=submit]:hover {
+    background: #cc0000;
+  }
+  .testimonials label {
+    margin-left: 20px;
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.gallery-container {
+  position: relative;
+  width: 100%;
+  height: 655px;
+  text-align: center;
+}
+
+.gallery-slideshow {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-slideshow img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  filter: brightness(60%);
+  z-index: 0;
+}
+
+.gallery-slideshow img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.location-timings {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 5;
+  display: grid;
+  width: 600px;
+  height: 200px;
+  padding: 10px 30px 52px;
+  grid: [row1-start] "TTL TTL" 1fr [row1-end] [row2-start] "DA1 TI1" 1fr [row2-end] [row3-start] "DA2 TI2" 1fr [row3-end]/1fr 1fr;
+  color: #0F0F0F;
+  background-color: #F9C50F;
+  font-family: "Source Code Pro", monospace;
+  font-size: 24px;
+}
+.location-timings h1 {
+  font-size: 40px;
+}
+
+.timing-title {
+  grid-area: TTL;
+  text-align: left;
+}
+
+.timing-date-1 {
+  grid-area: DA1;
+  text-align: left;
+}
+
+.timing-hour-1 {
+  grid-area: TI1;
+  text-align: right;
+}
+
+.timing-date-2 {
+  grid-area: DA2;
+  text-align: left;
+}
+
+.timing-hour-2 {
+  grid-area: TI2;
+  text-align: right;
+}
+
+.google-map {
+  width: 100%;
+  height: 1040.85px;
+  text-align: center;
+  align-content: center;
+}
+
+.google-map-description {
+  width: auto;
+  height: 120px;
+  padding: 40px 20px;
+  margin: 10px 450px 50px 450px;
+  text-align: center;
+  background-color: #D01F27;
+  color: #FFFFFF;
+}
+.google-map-description h1 {
+  margin-top: 0;
+}
+.google-map-description .button-white {
+  padding: 20px 150px;
+  border: none;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #0F0F0F;
+  border-radius: 0;
+  font-family: "Overpass", sans-serif;
+  font-size: 20px;
+}
+.google-map-description a {
+  text-decoration: none;
+}
+
+.services-header-notification {
+  height: 40px;
+  padding: 10px 0px;
+  color: #FFFFFF;
+  text-align: center;
+  align-content: center;
+  font-family: "Overpass", sans-serif;
+}
+.services-header-notification a {
+  color: white;
+}
+
+.hero-image {
+  padding: 250px;
+  color: #FFFFFF;
+  text-align: center;
+  background-image: url("../../../assets/services-and-prices-banner.png");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.service-grid-sample {
+  display: grid;
+  margin: 25px 100px 25px 100px;
+  grid: [row1-start] "IMG" 0.9fr [row1-end] [row2-start] "DES" 1fr [row2-end];
+  background-color: #FFFFFF;
+}
+
+.service-image {
+  grid-area: IMG;
+}
+
+#repairs .service-image {
+  background-image: url("../../../assets/services-repairs.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#exhaust-repair .service-image {
+  background-image: url("../../../assets/services-exhaust-repair.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#oil-change .service-image {
+  background-image: url("../../../assets/services-oilchange.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#accessories .service-image {
+  background-image: url("../../../assets/services-accessories.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#paintings .service-image {
+  background-image: url("../../../assets/services-painting.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#seat-clean .service-image {
+  background-image: url("../../../assets/services-seat-cleaning.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#polishing .service-image {
+  background-image: url("../../../assets/services-idk.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#denting .service-image {
+  background-image: url("../../../assets/services-denting.png");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#car-shed .service-image {
+  background-image: url("../../../assets/services-outdoor-shed.jpg");
+  background-color: #D01F27;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.service-desc {
+  grid-area: DES;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.service-desc h1 {
+  margin-bottom: 10px;
+}
+
+#repairs, #oil-change, #paintings, #exhaust-repair, #car-shed {
+  margin: 25px 50px 25px 100px;
+}
+
+#denting, #accessories, #polishing, #seat-clean {
+  margin: 25px 100px 25px 50px;
+}/*# sourceMappingURL=main.css.map */

@@ -3,19 +3,43 @@
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
 
-.location-hero-image {
+.gallery-container {
     position: relative;
     width: 100%;
     height: 655px;
     text-align: center;
+}
 
-    @include backgroundimage("../../../assets/location-banner.png");
+.gallery-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  filter: brightness(60%);
+  z-index: 0;
+}
+
+.gallery-slideshow img.active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .location-timings {
     position: absolute;
     bottom: 0px;
     left: 0px;
+    z-index: 5;
 
     display: grid;
     width: 600px;
@@ -67,8 +91,6 @@
     height: 1040.85px;
     text-align: center;
     align-content: center;
-
-    @include backgroundimage("../../../assets/google-maps-location.png");
 }
 
 .google-map-description {

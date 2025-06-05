@@ -41,8 +41,62 @@
 
 .service-image {
     grid-area: IMG;
-    background-color: gray;
 }
+
+#repairs { 
+    .service-image {
+        @include backgroundimage("../../../assets/services-repairs.jpg");
+    }
+}
+
+#exhaust-repair { 
+    .service-image {
+        @include backgroundimage("../../../assets/services-exhaust-repair.jpg");
+    }
+}
+
+#oil-change { 
+.service-image {
+        @include backgroundimage("../../../assets/services-oilchange.jpg");
+    }
+}
+
+#accessories {
+    .service-image {
+        @include backgroundimage("../../../assets/services-accessories.jpg");
+    }
+}
+
+#paintings {
+    .service-image {
+        @include backgroundimage("../../../assets/services-painting.jpg");
+    }
+}
+
+#seat-clean {
+    .service-image {
+        @include backgroundimage("../../../assets/services-seat-cleaning.jpg");
+    }
+}
+
+#polishing {
+    .service-image {
+        @include backgroundimage("../../../assets/services-idk.jpg");
+    }
+}
+
+#denting {
+    .service-image {
+        @include backgroundimage("../../../assets/services-denting.png");
+    }
+}
+
+#car-shed {
+        .service-image {
+        @include backgroundimage("../../../assets/services-outdoor-shed.jpg");
+    }
+}
+
 
 .service-desc {
     grid-area: DES;

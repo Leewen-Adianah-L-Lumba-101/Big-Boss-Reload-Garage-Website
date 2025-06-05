@@ -2,6 +2,7 @@
 @import "../abstracts/mixins";
 @import "../abstracts/functions";
 @import "../abstracts/placeholder";
+@import "../base/typography";
 
 .contact-background {
   background-color: #0F0F0F;
@@ -27,6 +28,14 @@
   }
 }
 
+h2 {
+  font-family: $SourceCodeFont;
+}
+
+label {
+  font-family: $PontanoSansFont;
+}
+
 .input-name, .input-email, .input-message {
   margin: 10px 0;
 }
@@ -37,11 +46,10 @@
   resize: vertical;
 }
 
-.whatsapp-container  {
+.whatsapp-container, .location-container {
   grid: QRC;
-  display: block;
   width: 170px;
-  height: 220px;
+  height: 200px;
   margin: 0 auto;
 
   text-align: center;
@@ -55,14 +63,22 @@
 
 .QR-code {
   width: 170px;
-  height: 150px;
+  height: 156px;
   
   @include backgroundimage("../../../assets/whatsapp-qr-code.svg");
 }
 
+.QR-code2 {
+  width: 170px;
+  height: 150px;
+  
+  @include backgroundimage("../../../assets/location-code.svg");
+}
+
 .contact-details {
   grid-area: DET;
-  margin-top: 10px;
+  margin-top: 2px;
+  margin-left: 20px;
 
   h2 {
     margin-top: 0px;
@@ -70,6 +86,7 @@
   
   li {
     margin-left: 30px;
+    font-family: $OverpassFont;
   }
 }
 
@@ -78,9 +95,38 @@
       background-color: $primary-blue;
       border: none;
       color: white;
-      padding: 10px 30px;
+      padding: 20px 30px;
       text-decoration: none;
       margin: 4px 2px;
       cursor: pointer;
+      font-family: $OverpassFont;
   }
+}
+
+input[type=text], select, input[type=email] {
+  font-family: $OverpassFont;
+  width: 650px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 650px;
+  height: 150px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  resize: none;
+}
+
+.qr-codes-container {
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 0px;
 }

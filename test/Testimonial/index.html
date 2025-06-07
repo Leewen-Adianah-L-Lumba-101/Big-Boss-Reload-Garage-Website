@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic HTML metadata -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="styles.css">
   <title>Testimonial Section</title>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <!-- Photo upload storage commented out -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script> -->
 </head>
 <body>
-  <!-- Main testimonials section container -->
   <section class="testimonials">
-    <!-- Section heading -->
     <h2>What Our Customers Say</h2>
     
-    <!-- Sorting controls container -->
     <div class="sort-controls">
-      <!-- Dropdown to select sorting method -->
       <select id="sortBy">
-        <!-- Sorting options with values that JavaScript will use -->
         <option value="newest">Newest First</option>
         <option value="oldest">Oldest First</option>
         <option value="rating-high">Rating: High to Low</option>
@@ -26,32 +24,20 @@
       </select>
     </div>
     
-    <!-- Container for the horizontal testimonial slider -->
     <div class="testimonial-slider">
-      <!-- Inner container where testimonial cards will be dynamically inserted -->
-      <div class="testimonial-container" id="submitted-reviews">
-        <!-- JavaScript will add testimonial cards here -->
-        <!-- They will display horizontally and scroll if needed -->
-      </div>
+      <div class="testimonial-container" id="submitted-reviews"></div>
     </div>
     
-    <!-- Button to open the review submission form -->
     <button id="writeReviewButton">Write a Review</button>
   </section>
 
-  <!-- Modal popup form (hidden by default) -->
   <div id="reviewModal" class="modal">
     <div class="modal-content">
-      <!-- Close button (X) for the modal -->
       <span class="close-button">&times;</span>
       <h3>Submit Your Testimonial</h3>
-      <!-- Review submission form -->
       <form id="testimonialForm">
-        <!-- Textarea for testimonial text -->
         <textarea name="testimonial" placeholder="Write your testimonial here..." required></textarea>
-        <!-- Input field for user's name -->
         <input type="text" name="name" placeholder="Your full name" required>
-        <!-- Rating dropdown -->
         <label for="rating">Rate Us:</label>
         <select name="rating" id="rating" required>
           <option value="1">⭐</option>
@@ -60,13 +46,29 @@
           <option value="4">⭐⭐⭐⭐</option>
           <option value="5">⭐⭐⭐⭐⭐</option>
         </select>
-        <!-- Submit button -->
+        
+        <!-- Photo upload section commented out -->
+        <!--
+        <div class="photo-upload">
+          <label for="reviewPhoto">Upload Photo (Optional - Max 2MB)</label>
+          <input type="file" id="reviewPhoto" name="photo" accept="image/jpeg, image/png">
+          <div id="photoPreview" style="display:none;">
+            <img id="previewImage" src="#" alt="Preview">
+            <button type="button" id="removePhoto">Remove</button>
+          </div>
+        </div>
+        
+        <div id="uploadProgress" style="display: none;">
+          <p>Uploading photo... <span id="progressPercent">0</span>%</p>
+          <progress id="uploadProgressBar" value="0" max="100"></progress>
+        </div>
+        -->
+        
         <button type="submit">Submit</button>
       </form>
     </div>
   </div>
 
-  <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>

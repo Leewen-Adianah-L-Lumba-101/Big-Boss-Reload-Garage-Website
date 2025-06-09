@@ -335,7 +335,6 @@ body {
     
     .testimonials {
         grid-area: testimonials;
-        height: 652px;
         background-color: $primary-black;
         color: $primary-white;
         align-items: center;
@@ -352,7 +351,6 @@ body {
         
         /* TESTIMONIAL SECTION */
         .testimonials2 {
-            padding: 50px 20px;
             text-align: center; 
         }
         
@@ -458,6 +456,7 @@ body {
         #writeReviewButton {
             padding: 20px 150px;
             margin-top: 30px;
+            padding-bottom: 30px;
             border: none;
             border-radius: 0; 
             

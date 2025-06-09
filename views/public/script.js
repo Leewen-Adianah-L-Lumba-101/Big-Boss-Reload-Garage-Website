@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const submittedReviewsContainer = document.getElementById("submitted-reviews");
   const sortSelect = document.getElementById("sortBy");
 
+  // To clear local storage
+  // clearLocalStorage()
+
   // Load reviews on page load
   loadSavedReviews();
 

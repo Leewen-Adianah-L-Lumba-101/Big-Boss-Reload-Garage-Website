@@ -115,3 +115,22 @@ function clearLocalStorage() {
   localStorage.clear();
   console.log('Local storage cleared.');
 }
+
+let currentSlide = 0;
+const slides = document.querySelectorAll(".gallery-slideshow img");
+setInterval(() => {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}, 3000);
+
+function sendEmail(){
+  var sig = document.getElementById('signature').value;
+  var sub = document.getElementById('subject').value;
+  var msgContent = document.getElementById('message').value;
+  var encodedMSGContent = encodeURIComponent(msgContent + "\n\nBy: " + sig)
+  
+  // Concatenate to string to build URL
+  var url = "mailto:bigbossgarage2024@gmail.com" + "?subject=" + sub + "&body=" + encodedMSGContent;
+  window.location.href = url;
+}

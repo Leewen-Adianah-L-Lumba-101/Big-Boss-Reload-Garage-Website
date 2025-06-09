@@ -30,6 +30,7 @@ ol {
     display: flex;
     justify-content: center;
     text-align: center;
+    font-family: "Source Code Pro", monospace;
   }
   .primary-navigation {
     display: none;
@@ -598,7 +599,7 @@ body {
   }
   .testimonials {
     grid-area: testimonials;
-    height: 652px;
+    height: 678px;
     background-color: #0F0F0F;
     color: #FFFFFF;
     align-items: center;
@@ -629,7 +630,6 @@ body {
     font-weight: 400;
   }
   .testimonials .testimonials2 {
-    padding: 50px 20px;
     text-align: center;
   }
   .testimonials .testimonials h2 {

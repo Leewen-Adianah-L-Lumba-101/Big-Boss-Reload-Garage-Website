@@ -274,3 +274,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => errorDiv.remove(), 5000);
   }
 });
+
+// Function to clear local storage
+function clearLocalStorage() {
+  localStorage.clear();
+  console.log('Local storage cleared.');
+}
